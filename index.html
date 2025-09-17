@@ -5,24 +5,26 @@
   <title>INE Tarjeta</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    body {
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
     .ine-card {
-      width: 500px;
+      max-width: 500px;
       border: 2px solid #ccc;
       border-radius: 12px;
       padding: 20px;
       margin: 50px auto;
       background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
       font-size: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       position: relative;
     }
     .ine-header {
       font-weight: bold;
       text-align: center;
       margin-bottom: 15px;
-    }
-    .ine-row {
-      display: flex;
-      justify-content: space-between;
+      font-size: 16px;
     }
     .ine-photo {
       width: 100px;
@@ -30,25 +32,35 @@
       margin-right: 15px;
       border-radius: 5px;
       overflow: hidden;
+      flex-shrink: 0;
     }
     .ine-logo {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 15px;
+      right: 15px;
       width: 80px;
       height: auto;
+    }
+    .ine-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    .ine-divider {
+      margin: 15px 0;
+      border-top: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
 
-<div class="ine-card shadow">
-  <!-- Logo INE local -->
+<div class="ine-card">
+  <!-- Logo INE -->
   <img src="img/LOGO-INE.jpg" alt="Logo INE" class="ine-logo">
 
   <div class="ine-header">INSTITUTO NACIONAL ELECTORAL</div>
 
-  <div class="d-flex">
+  <div class="d-flex mb-3">
     <div class="ine-photo">
       <img src="img/foto.jpeg" class="img-fluid rounded" alt="Foto INE">
     </div>
@@ -61,7 +73,8 @@
     </div>
   </div>
 
-  <hr>
+  <div class="ine-divider"></div>
+
   <div class="ine-row">
     <p><strong>Emisión:</strong> 2022</p>
     <p><strong>Vigencia:</strong> 2032</p>
