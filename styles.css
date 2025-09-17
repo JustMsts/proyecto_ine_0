@@ -1,0 +1,56 @@
+/* styles.css */
+body {
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.ine-card {
+  max-width: 500px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 50px auto;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.ine-header {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.ine-photo {
+  width: 100px;
+  height: 120px;
+  margin-right: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ine-logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 80px;
+  height: auto;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.ine-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.ine-divider {
+  margin: 15px 0;
+  border-top: 1px solid #ccc;
+}
