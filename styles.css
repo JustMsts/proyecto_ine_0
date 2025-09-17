@@ -1,21 +1,25 @@
-/* styles.css */
 body {
   background: #f0f0f0;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Card */
 .ine-card {
   max-width: 500px;
+  width: 90%;
   border: 2px solid #ccc;
   border-radius: 12px;
   padding: 20px;
-  margin: 50px auto;
+  margin: 100px auto 50px auto; /* space for logo on top */
   background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
   font-size: 14px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   position: relative;
 }
 
+/* Header */
 .ine-header {
   font-weight: bold;
   text-align: center;
@@ -23,6 +27,7 @@ body {
   font-size: 16px;
 }
 
+/* User photo */
 .ine-photo {
   width: 100px;
   height: 120px;
@@ -32,25 +37,45 @@ body {
   flex-shrink: 0;
 }
 
+/* Logo outside card */
 .ine-logo {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
   width: 80px;
   height: auto;
   background: #fff;
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
 }
 
+/* Data rows */
 .ine-row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 5px;
 }
 
+/* Divider */
 .ine-divider {
   margin: 15px 0;
   border-top: 1px solid #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .ine-card {
+    padding: 15px;
+  }
+  .ine-photo {
+    width: 80px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  .ine-row {
+    flex-direction: column;
+  }
 }
