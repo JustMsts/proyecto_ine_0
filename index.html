@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>INE Tarjeta</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .ine-card {
-            width: 500px;
-            border: 2px solid #ccc;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 50px auto;
-            background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
-            font-size: 14px;
-        }
-        .ine-header {
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        .ine-row {
-            display: flex;
-            justify-content: space-between;
-        }
-        .ine-photo {
-            width: 100px;
-            height: 120px;
-            margin-right: 15px;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>INE Tarjeta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .ine-card {
+      width: 500px;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 50px auto;
+      background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+      font-size: 14px;
+      position: relative;
+    }
+    .ine-header {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .ine-row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .ine-photo {
+      width: 100px;
+      height: 120px;
+      margin-right: 15px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .ine-logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 80px;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
 
 <div class="ine-card shadow">
-    <div class="ine-header">INSTITUTO NACIONAL ELECTORAL</div>
-    <div class="d-flex">
-        <div class="ine-photo">
-            <img src="img/foto.jpeg" class="img-fluid rounded" alt="Foto INE">
-        </div>
+  <!-- Logo INE -->
+  <img src="https://centralelectoral.ine.mx/wp-content/uploads/2024/04/LOGO-INE-.jpg" alt="Logo INE" class="ine-logo">
 
-        <div>
-            <p><strong>Nombre:</strong> Juan Luis Lagunas Rosales</p>
-            <p><strong>Domicilio:</strong> Culichi</p>
-            <p><strong>CURP:</strong> PEPJ800101HDFLRN09</p>
-            <p><strong>Clave Elector:</strong> PRLJ800101HDFRNN09</p>
-        </div>
+  <div class="ine-header">INSTITUTO NACIONAL ELECTORAL</div>
+
+  <div class="d-flex">
+    <div class="ine-photo">
+      <img src="img/foto.jpg" class="img-fluid rounded" alt="Foto INE">
     </div>
-    <hr>
-    <div class="ine-row">
-        <p><strong>Emisión:</strong> 2022</p>
-        <p><strong>Vigencia:</strong> 2032</p>
+
+    <div>
+      <p><strong>Nombre:</strong> JUAN PÉREZ LOPEZ</p>
+      <p><strong>Domicilio:</strong> Calle Falsa 123, CDMX</p>
+      <p><strong>CURP:</strong> PEPJ800101HDFLRN09</p>
+      <p><strong>Clave Elector:</strong> PRLJ800101HDFRNN09</p>
     </div>
-    <div class="ine-row">
-        <p><strong>CIC:</strong> 1234567890123</p>
-        <p><strong>Sección:</strong> 1234</p>
-    </div>
-    <div class="ine-row">
-        <p><strong>Estado:</strong> Culiacan</p>
-        <p><strong>Municipio:</strong> Malecon</p>
-        <p><strong>Localidad:</strong> Nápoles</p>
-    </div>
+  </div>
+
+  <hr>
+  <div class="ine-row">
+    <p><strong>Emisión:</strong> 2022</p>
+    <p><strong>Vigencia:</strong> 2032</p>
+  </div>
+  <div class="ine-row">
+    <p><strong>CIC:</strong> 1234567890123</p>
+    <p><strong>Sección:</strong> 1234</p>
+  </div>
+  <div class="ine-row">
+    <p><strong>Estado:</strong> Ciudad de México</p>
+    <p><strong>Municipio:</strong> Benito Juárez</p>
+    <p><strong>Localidad:</strong> Nápoles</p>
+  </div>
 </div>
 
 </body>
