@@ -12,7 +12,7 @@ body {
   border: 2px solid #ccc;
   border-radius: 12px;
   padding: 20px;
-  margin: 100px auto 50px auto; /* space for logo on top */
+  margin: 100px auto 50px auto; /* espacio para el logo */
   background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
   font-size: 14px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -37,19 +37,19 @@ body {
   flex-shrink: 0;
 }
 
-/* Logo outside card */
+/* Logo outside card, top-right corner */
 .ine-logo {
-  position: fixed; /* fuera de la tarjeta */
+  position: fixed;
   top: 20px;
   right: 20px;
   width: 80px;
+  height: auto;
   background: #fff;
   padding: 5px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   z-index: 1000;
 }
-
 
 /* Data rows */
 .ine-row {
